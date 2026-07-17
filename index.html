@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Santhosh | AI & ML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="neumorphism-portfolio-overrides.css">
+  <!-- Google Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Remixicon for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">santhosh</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#timeline" class="nav-link">Education</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#profiles" class="nav-link">Profiles</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <!-- Ambient background grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-text reveal">
+        <p class="hero-eyebrow"><span class="dot"></span> Open to opportunities</p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="hero-name">Sai Santhosh</span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Building intelligent systems that learn, adapt, and solve real-world problems
+          — from data pipelines to deployed ML models.
+        </p>
+        <div class="hero-cta">
+          <a href="Sai_Santhosh Resume.pdf" class="btn btn-primary" download>
+            <i class="ri-download-2-line"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            View Projects <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-1">
+        <div class="profile-ring">
+          <div class="profile-img-wrapper">
+            <img src="my pic.jpeg" alt="Sai Santhosh" class="profile-image" />
+          </div>
+          <!-- Orbit badges -->
+          <div class="orbit-badge orbit-badge--python" aria-label="Python">
+            <i class="ri-code-s-slash-line"></i> Python
+          </div>
+          <div class="orbit-badge orbit-badge--ml" aria-label="ML">
+            <i class="ri-brain-line"></i> ML
+          </div>
+          <div class="orbit-badge orbit-badge--data" aria-label="Data Science">
+            <i class="ri-bar-chart-2-line"></i> Data
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Turning Data into <span class="accent">Intelligence</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+        <p>
+          I'm <strong>Sai Santhosh</strong>, an aspiring <span class="accent">Data Scientist</span>,
+          <span class="accent">Data Analyst</span>, and
+          <span class="accent">AI & Machine Learning Developer</span> passionate about solving
+          real-world problems through data-driven solutions. I enjoy extracting meaningful
+          insights from data, building intelligent models, and developing applications that
+          create measurable business value.
+        </p>
+          <p>
+            From cleaning messy datasets and building predictive models to deploying
+            full-stack applications, I enjoy every step of the journey. My work spans
+            customer churn prediction, stock forecasting, and interactive dashboards —
+            always with clean code and reproducible results.
+          </p>
+          <p>
+            When I'm not training models, I'm solving algorithmic challenges on LeetCode
+            and HackerRank, or exploring the latest papers in deep learning and NLP.
+          </p>
+          <div class="about-tags">
+            <span class="tag">AI &amp; ML</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">Python Dev</span>
+            <span class="tag">Power BI</span>
+          </div>
+        </div>
+
+        <div class="about-stats reveal reveal-delay-1">
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="8">0</span>
+            <span class="stat-symbol">+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-symbol">+</span>
+            <span class="stat-label">Technologies Learned</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-symbol">+</span>
+            <span class="stat-label">Problems Solved</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-symbol">+</span>
+            <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ========== SKILLS SECTION ========== -->
+<section class="skills section" id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Skills</span>
+      <h2 class="section-title">My <span class="accent">Tech Stack</span></h2>
+    </div>
+
+    <div class="skills-cloud reveal">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Java</span>
+      <span class="skill-tag">Java script</script></span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Express.js</span>
+      <span class="skill-tag">Pandas</span>
+      <span class="skill-tag">NumPy</span>
+      <span class="skill-tag">Scikit-Learn</span>
+      <span class="skill-tag">Matplotlib</span>
+      <span class="skill-tag">Seaborn</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">Excel</span>
+      <span class="skill-tag">Power BI</span>
+      <span class="skill-tag">Regression</span>
+      <span class="skill-tag">Classification</span>
+      <span class="skill-tag">Feature Engineering</span>
+      <span class="skill-tag">EDA</span>
+      <span class="skill-tag">Model Evaluation &amp; Tuning</span>
+      <span class="skill-tag">Deep Learning</span>
+      <span class="skill-tag">YOLOv8</span>
+      <span class="skill-tag">OpenCV</span>
+      <span class="skill-tag">DeepSORT</span>
+      <span class="skill-tag">Anomaly Detection</span>
+      <span class="skill-tag">Jupyter</span>
+      <span class="skill-tag">Git &amp; GitHub</span>
+      <span class="skill-tag">VS Code</span>
+      <span class="skill-tag">Databricks</span>
+      <span class="skill-tag">Apache Spark</span>
+      <span class="skill-tag">Statistics</span>
+      <span class="skill-tag">Data Preprocessing</span>
+      <span class="skill-tag">Data Visualization</span>
+      <span class="skill-tag">Real-Time Processing</span>
+      <span class="skill-tag">Computer Vision</span>
+      <span class="skill-tag">MediaPipe</span>
+      <span class="skill-tag">PyAutoGUI</span>
+      <span class="skill-tag">Pygame</span>
+      <span class="skill-tag">React.js</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">MongoDB</span>
+      <span class="skill-tag">Agile</span>
+    </div>
+  </div>
+</section>
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Things I've <span class="accent">Built</span></h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1: AI Surveillance System -->
+        <div class="project-card glass-card reveal" data-category="cv">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-1">
+              <i class="ri-camera-lens-line"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-type">Computer Vision</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">ThreatVision — AI Surveillance System</h3>
+            <p class="project-desc">
+              Real-time AI surveillance that detects, tracks &amp; analyzes people and vehicles.
+              Identifies suspicious behaviors (loitering, running) and fires instant alerts
+              with full CSV analytics logging.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">YOLOv8</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">DeepSORT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Saisanthosh2155/AI-Surveillance-System" target="_blank" rel="noopener" class="btn-sm btn-ghost"><i class="ri-github-line"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Gesture Control Device -->
+        <div class="project-card glass-card reveal reveal-delay-1" data-category="cv">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-2">
+              <i class="ri-hand-coin-line"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-type">Computer Vision</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Gesture Control Device</h3>
+            <p class="project-desc">
+              Control your PC using only hand gestures captured via webcam — move the cursor,
+              click, scroll, minimize and close windows using natural hand signs.
+              No mouse, no touchpad required.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">MediaPipe</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">PyAutoGUI</span>
+              <span class="tech-tag">Pygame</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Saisanthosh2155/Gesture_control_device" target="_blank" rel="noopener" class="btn-sm btn-ghost"><i class="ri-github-line"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: SQL Retail Sales Analysis -->
+        <div class="project-card glass-card reveal reveal-delay-2" data-category="data">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-3">
+              <i class="ri-store-2-line"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-type">Data Analytics</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">SQL Retail Sales Analysis</h3>
+            <p class="project-desc">
+              End-to-end SQL project covering database setup, data cleaning, EDA and
+              business-driven query analysis on a retail sales dataset — uncovering
+              top customers, peak seasons, and category performance.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">EDA</span>
+              <span class="tech-tag">Data Cleaning</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Saisanthosh2155/sql_retail_sales_project" target="_blank" rel="noopener" class="btn-sm btn-ghost"><i class="ri-github-line"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Customer Behavior Analysis -->
+        <div class="project-card glass-card reveal reveal-delay-3" data-category="data">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-5">
+              <i class="ri-shopping-cart-2-line"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-type">Data Analytics</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Customer Behavior Analysis</h3>
+            <p class="project-desc">
+              End-to-end analysis of customer interactions and purchase behavior to uncover
+              churn drivers, engagement trends, and business opportunities using Python and Power BI.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">EDA</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Saisanthosh2155/Customer-behavior-analysis" target="_blank" rel="noopener" class="btn-sm btn-ghost"><i class="ri-github-line"></i> GitHub</a>
+              <button type="button" class="btn-sm btn-filled dashboard-open-btn" data-dashboard-url="https://app.powerbi.com/view?r=eyJrIjoiNzUyNTBiMzgtMzMyNi00Y2FiLTgxOGMtYjk2ZGFhZTc5NTFiIiwidCI6IjBlMDYxYTM5LWNlZWQtNGUwOS1hZTg5LTUwOWZhNjY5ODM5OSJ9">
+                <i class="ri-bar-chart-fill"></i> View Dashboard
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: FMML Lab Project -->
+        <div class="project-card glass-card reveal reveal-delay-4" data-category="ml">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-4">
+              <i class="ri-brain-line"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="project-type">Machine Learning</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">FMML Lab — ML Foundations</h3>
+            <p class="project-desc">
+              A comprehensive collection of ML lab notebooks covering regression,
+              classification, clustering (K-Means, Hierarchical), feature engineering,
+              data augmentation, and linear algebra fundamentals.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Jupyter</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Saisanthosh2155/FMML_LAB_PROJECT" target="_blank" rel="noopener" class="btn-sm btn-ghost"><i class="ri-github-line"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- ========== TIMELINE SECTION ========== -->
+<section class="timeline section" id="timeline">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Education</span>
+      <h2 class="section-title">My <span class="accent">Education Journey</span></h2>
+    </div>
+
+    <div class="timeline-wrapper">
+
+      <!-- School -->
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-date">2020</span>
+          <h3 class="timeline-title">Secondary School Education</h3>
+          <p class="timeline-org">
+            <i class="ri-school-line"></i> Sai Geethanjali High School
+          </p>
+          <p class="timeline-desc">
+            Successfully completed Secondary School Education (SSC) with a strong academic foundation in Mathematics, Science, and Computer Fundamentals.
+          </p>
+          <span class="timeline-badge badge-edu">School</span>
+        </div>
+      </div>
+
+      <!-- Intermediate -->
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-date">2020 – 2022</span>
+          <h3 class="timeline-title">Intermediate Education (MPC)</h3>
+          <p class="timeline-org">
+            <i class="ri-book-open-line"></i> Sri Chaitanya Junior College
+          </p>
+          <p class="timeline-desc">
+            Completed Intermediate education with MPC (Mathematics, Physics, Chemistry), strengthening analytical thinking and problem-solving skills.
+          </p>
+          <span class="timeline-badge badge-edu">Intermediate</span>
+        </div>
+      </div>
+
+      <!-- B.Tech -->
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <span class="timeline-date">2022 – 2026</span>
+          <h3 class="timeline-title">B.Tech – Computer Science & Data Science</h3>
+          <p class="timeline-org">
+            <i class="ri-graduation-cap-line"></i> Kakinada Institute of Engineering and Technology
+          </p>
+          <p class="timeline-desc">
+            Pursuing Bachelor of Technology in Computer Science with Data Science. Focused on Python, Machine Learning, Data Analytics, SQL, Full Stack Development, and Artificial Intelligence.
+          </p>
+          <span class="timeline-badge badge-edu">Bachelor's Degree</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ========== ACHIEVEMENTS SECTION ========== -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Milestones &amp; <span class="accent">Recognition</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+
+        <div class="achievement-card glass-card reveal">
+          <div class="ach-icon-wrap icon-gold">
+            <i class="ri-code-box-line"></i>
+          </div>
+          <h3>100+ Problems Solved</h3>
+          <p>Solved over 100 algorithmic challenges across LeetCode and HackerRank, covering arrays, trees, DP, and graphs.</p>
+          <span class="ach-tag">Coding</span>
+        </div>
+
+        <div class="achievement-card glass-card reveal reveal-delay-1">
+          <div class="ach-icon-wrap icon-blue">
+            <i class="ri-award-line"></i>
+          </div>
+          <h3>IIIT FMML Certificate</h3>
+          <p>Completed the IIIT Hyderabad FMML program with practical training in modern AI and Machine Learning concepts.</p>
+          <span class="ach-tag">Certification</span>
+        </div>
+
+        <div class="achievement-card glass-card reveal reveal-delay-2">
+          <div class="ach-icon-wrap icon-green">
+            <i class="ri-trophy-line"></i>
+          </div>
+          <h3>Hackathon Finalist</h3>
+          <p>Reached the final round of a Full-Stack Hackathon by developing an educational library management web application within 24 hours..</p>
+          <span class="ach-tag">Hackathon</span>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CODING PROFILES SECTION ========== -->
+  <section class="profiles section" id="profiles">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Coding Profiles</span>
+        <h2 class="section-title">Find Me <span class="accent">Online</span></h2>
+      </div>
+
+      <div class="profiles-grid">
+
+        <a href="https://github.com/Saisanthosh2155" target="_blank" rel="noopener" class="profile-card glass-card reveal" aria-label="GitHub Profile">
+          <div class="profile-icon github-icon">
+            <i class="ri-github-fill"></i>
+          </div>
+          <div class="profile-info">
+            <h3>GitHub</h3>
+            <p>@Saisanthosh2155</p>
+            <span class="profile-stat"><i class="ri-git-repository-line"></i> 10+ Repositories</span>
+          </div>
+          <i class="ri-arrow-right-up-line profile-arrow"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/sai-santhosh-905998293" target="_blank" rel="noopener" class="profile-card glass-card reveal reveal-delay-1" aria-label="LinkedIn Profile">
+          <div class="profile-icon linkedin-icon">
+            <i class="ri-linkedin-fill"></i>
+          </div>
+          <div class="profile-info">
+            <h3>LinkedIn</h3>
+            <p>Sai Santhosh</p>
+            <span class="profile-stat"><i class="ri-user-follow-line"></i> 300+ Connections</span>
+          </div>
+          <i class="ri-arrow-right-up-line profile-arrow"></i>
+        </a>
+
+        <a href="https://leetcode.com/u/_Sai_santhosh_/" target="_blank" rel="noopener" class="profile-card glass-card reveal reveal-delay-2" aria-label="LeetCode Profile">
+          <div class="profile-icon leetcode-icon">
+            <i class="ri-code-s-slash-line"></i>
+          </div>
+          <div class="profile-info">
+            <h3>LeetCode</h3>
+            <p>@_Sai_santhosh_</p>
+            <span class="profile-stat"><i class="ri-checkbox-circle-line"></i> 100+ Problems</span>
+          </div>
+          <i class="ri-arrow-right-up-line profile-arrow"></i>
+        </a>
+
+        <a href="https://www.hackerrank.com/profile/22B21A44A3" target="_blank" rel="noopener" class="profile-card glass-card reveal reveal-delay-3" aria-label="HackerRank Profile">
+          <div class="profile-icon hackerrank-icon">
+            <i class="ri-terminal-box-line"></i>
+          </div>
+          <div class="profile-info">
+            <h3>HackerRank</h3>
+            <p>@22B21A44A3</p>
+            <span class="profile-stat"><i class="ri-star-fill"></i> 5★ Python</span>
+          </div>
+          <i class="ri-arrow-right-up-line profile-arrow"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">Sai santhosh</div>
+          <p>Building intelligent systems, one model at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="https://github.com/Saisanthosh2155" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://linkedin.com/in/sai-santhosh-905998293" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sai Santhosh. Crafted with <i class="ri-heart-fill" style="color:#F87171"></i> and lots of Python.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <div class="dashboard-modal" id="dashboardModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="dashboardModalTitle">
+    <div class="dashboard-modal__backdrop" data-close-modal></div>
+    <div class="dashboard-modal__dialog">
+      <button type="button" class="dashboard-modal__close" aria-label="Close dashboard" data-close-modal>
+        <i class="ri-close-line"></i>
+      </button>
+      <div class="dashboard-modal__header">
+        <h3 id="dashboardModalTitle">Power BI Dashboard</h3>
+        <p>Viewing the dashboard inside a responsive modal preview.</p>
+      </div>
+      <div class="dashboard-modal__frame-wrap">
+        <div class="dashboard-modal__loader" id="dashboardLoader" aria-hidden="true">
+          <div class="dashboard-modal__spinner"></div>
+        </div>
+        <iframe id="dashboardFrame" title="Power BI Dashboard" loading="lazy" allowfullscreen allow="fullscreen; autoplay; encrypted-media"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

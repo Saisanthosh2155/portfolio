@@ -1,0 +1,125 @@
+
+/* ======================================================
+   NEUMORPHISM OVERRIDE CSS
+   Add AFTER your existing global.css
+   ====================================================== */
+
+:root{
+  /* Use global theme tokens for consistent palette */
+  --neu-bg: var(--color-bg);
+  --neu-surface: rgba(255,255,255,0.02); /* subtle card surface over dark bg */
+  --neu-light: rgba(255,255,255,0.03);
+  --neu-dark: rgba(2,6,23,0.6);
+
+  --neu-shadow: 14px 18px 36px rgba(2,6,23,0.45);
+  --neu-shadow-sm: 6px 8px 18px rgba(2,6,23,0.35);
+  --neu-inset: inset 6px 6px 12px rgba(2,6,23,0.5);
+}
+
+body{
+  background:var(--neu-bg);
+}
+
+.glass-card,
+.project-card,
+.stat-card,
+.timeline-card,
+.achievement-card,
+.profile-card,
+.contact-form{
+  background:var(--neu-surface) !important;
+  border:none !important;
+  backdrop-filter:none !important;
+  box-shadow:var(--neu-shadow);
+  border-radius:24px;
+}
+
+.navbar{
+  background:var(--neu-surface);
+  border:none;
+  box-shadow:var(--neu-shadow-sm);
+}
+
+.nav-link{
+  border-radius:14px;
+}
+
+.nav-link:hover{
+  box-shadow:var(--neu-shadow-sm);
+  background:var(--neu-surface);
+}
+
+.filter-btn,
+.back-to-top,
+.social-icon{
+  background:var(--neu-surface);
+  border:none;
+  box-shadow:var(--neu-shadow-sm);
+}
+
+.filter-btn:hover,
+.social-icon:hover{
+  box-shadow:var(--neu-inset);
+}
+
+.skill-tag,
+.tag,
+.tech-tag,
+.timeline-badge,
+.ach-tag{
+  border:none;
+  background:var(--neu-surface);
+  box-shadow:var(--neu-shadow-sm);
+}
+
+.form-group input,
+.form-group textarea{
+  background:var(--neu-surface);
+  border:none;
+  box-shadow:var(--neu-inset);
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+  box-shadow:
+      inset 8px 8px 16px rgba(0,0,0,.8),
+      inset -8px -8px 16px rgba(255,255,255,.05);
+}
+
+.profile-img-wrapper{
+  background:var(--neu-surface);
+  padding:10px;
+  box-shadow:var(--neu-shadow);
+}
+
+.profile-placeholder{
+  background:var(--neu-bg);
+}
+
+.stat-card:hover,
+.project-card:hover,
+.timeline-card:hover,
+.profile-card:hover,
+.achievement-card:hover{
+  transform:translateY(-5px);
+}
+
+.section-tag{
+  border:none;
+  box-shadow:var(--neu-shadow-sm);
+}
+
+.contact-icon,
+.profile-icon,
+.ach-icon-wrap{
+  box-shadow:var(--neu-shadow-sm);
+}
+
+.scroll-mouse{
+  box-shadow:var(--neu-shadow-sm);
+  border:none;
+}
+
+.footer{
+  background:var(--neu-bg);
+}
