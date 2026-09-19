@@ -15,7 +15,3 @@
     top: 4.5rem !important;
   }
 }
-
-/* Hearts widget: push below header on sm/md screens */.hearts-widget-fix{top:4.5rem!important}@media(min-width:1024px){.hearts-widget-fix{top:auto!important}}
-
-/* Stronger override: push hearts widget below header using unique class combo */@media(max-width:1023px){.hearts-widget-fix,.sm\:top-9{top:4.5rem!important}}
