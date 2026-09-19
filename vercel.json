@@ -1,0 +1,7 @@
+{
+  "outputDirectory": "site",
+  "rewrites": [
+    { "source": "/api/visitors", "destination": "/api/visitors" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
