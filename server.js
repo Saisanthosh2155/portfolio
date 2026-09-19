@@ -47,16 +47,28 @@ function resolve(urlPath) {
 
 // The live site backs its visitor/like counter with a serverless route.
 // A static mirror has no backend, so stub it with the snapshot values.
-const stats = { uniqueVisitors: 290, likes: 52, hasLiked: false, visitorNumber: 290 };
+const stats = { uniqueVisitors: 25, likes: 25, hasLiked: false, visitorNumber: 25 };
 
 http.createServer((req, res) => {
   if (req.url.split('?')[0] === '/api/visitors') {
-    if (req.method === 'POST') {
-      stats.likes += stats.hasLiked ? -1 : 1;
-      stats.hasLiked = !stats.hasLiked;
+    const cors = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'content-type': 'application/json',
+    };
+    if (req.method === 'OPTIONS') {
+      res.writeHead(204, cors);
+      return res.end();
     }
-    res.writeHead(200, { 'content-type': 'application/json' });
-    return res.end(JSON.stringify(stats));
+    if (req.method === 'POST') {
+      if (!stats.hasLiked) {
+        stats.likes += 1;
+        stats.hasLiked = true;
+      }
+    }
+    res.writeHead(200, cors);
+    return res.end(JSON.stringify({ ...stats, persisted: true }));
   }
 
   let file = resolve(req.url);
