@@ -4,3 +4,18 @@
 
 /* hero heading size override */
 .text-\[clamp\(3\.5rem\,11vw\,9rem\)\]{font-size:clamp(3.1rem,9.5vw,7.8rem)}
+
+   Hearts widget: push below header (sm screens)
+   ============================================== */
+@media (min-width: 640px) and (max-width: 1023px) {
+  /* The hearts/like widget sits at sm:top-9 (36px) which overlaps the header.
+     Push it to 72px so header nav (About/Work/Contact/Resume) stays visible. */
+  .absolute.z-\[50\],
+  [class*='top-9'] {
+    top: 4.5rem !important;
+  }
+}
+
+/* Hearts widget: push below header on sm/md screens */.hearts-widget-fix{top:4.5rem!important}@media(min-width:1024px){.hearts-widget-fix{top:auto!important}}
+
+/* Stronger override: push hearts widget below header using unique class combo */@media(max-width:1023px){.hearts-widget-fix,.sm\:top-9{top:4.5rem!important}}
